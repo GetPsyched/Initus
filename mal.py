@@ -88,7 +88,7 @@ class MAL(commands.Cog):
 
         await ctx.send(embed = embed)
 
-    @commands.command(name = 'manga', brief='Gets the info of the manga from myanimelist', case_insensitive=True)
+    @commands.command(name = 'manga', brief='Gets the info of the manga from myanimelist')
     async def manga(self, ctx, *, manga_name = ''):
         if ctx.channel == self.chill_lounge:
             response = 'You can\'t use this command on this channel :('
